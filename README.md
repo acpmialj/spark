@@ -10,6 +10,6 @@ docker run --rm -it \
     -p 8888:8888 \
     -v "$PWD":/workspace \
     jdvelasq/spark:3.1.3 
-    ```
+```
     
 Nota: la descarga es larga, es un contenedor de varios GB. Incluye Hadoop Core, Spark, PySpark, Jupyter. Lanza una instancia de Jupyter Lab. 
