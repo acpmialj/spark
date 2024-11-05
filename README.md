@@ -8,7 +8,6 @@ docker run --rm -it \
     --name spark \
     -p 4040:4040 \
     -p 50070:50070 \
-    -p 8088:8088 \
     -p 8888:8888 \
     -v "$PWD":/workspace \
     jdvelasq/spark:3.1.3 
@@ -17,6 +16,9 @@ docker run --rm -it \
 Nota: la descarga puede ser bastante larga, es una imagen de varios GB. Incluye Hadoop Core, Spark, PySpark, Jupyter. 
 
 La creación del contenedor termina lanzando una instancia de Jupyter Lab. Abrir el el navegador del anfitrión el URL que empieza por http://127.0.0.1:8888
+
+En http://localhost:50070 tenemos acceso al webUI de HDFS.
+En http://localhost:4040 tenemos acceso al histórico de trabajos de Spark. 
 
 Hecho esto, desde Jupyter Lab podremos ver y ejecutar los cuadernos. Seguir las instrucciones que se dan en ellos. 
 
